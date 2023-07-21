@@ -1,0 +1,35 @@
+Corporate Survival:
+
+BOSSES:
+- WAGGZ:
+- HR:
+- QA:
+Mini-Bosses:
+- Code review:
+- Senior Dev:
+Enemy:
+- Warn bug:
+- Error bug:
+
+Upgrades:
+- IDE upgrade
+- Library upgrades:
+    - Poetry:
+    - Asyncio:
+- User upgrades:
+    - Doritos: health
+    - Monster: speed
+    - Coffee: damage
+Abilities:
+- Pycharm:
+    - Size = x
+    - Speed = x
+    - Dps = x
+- VScode:
+    - Size = x
+    - Speed = x
+    - Dps = x
+- Atom:
+    - Size = x
+    - Speed = x
+    - Dps = x
