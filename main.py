@@ -24,6 +24,8 @@ bug_frame = 0
 office_slave_sheet = Spritesheet("officeslave.png")
 error_bug = Spritesheet("error_bug.png")
 warning_bug = Spritesheet("warning_bug.png")
+bullet = Spritesheet("push.png")
+
 
 def createBugs(number_of_bugs, bug_type):
     global bug_frame
@@ -56,8 +58,22 @@ frame_count = 0
 warning_bug_frames_to_use = warning_bug_right
 error_bug_frames_to_use = error_bug_right
 
+def create_bullet(number_of_bullets, upgrade_type):
+    for x in range(number_of_bullets+1):
+        bullet_x, bullet_y = worker_position_x, worker_position_y
+
+
+
+
+
+
+
 warning_bugs = createBugs(10, warning_bug)
 error_bugs = createBugs(5, error_bug)
+
+
+
+
 while running:
 
     # print("frame " + str(bug_frame))
@@ -77,16 +93,16 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    if keys[pygame.K_LEFT]:
+    if keys[pygame.K_a]:
         current_frame = office_slave_left[frame]
         worker_position_x  -= speed_modifier
-    elif keys[pygame.K_RIGHT]:
+    elif keys[pygame.K_d]:
         current_frame = office_slave_right[frame]
         worker_position_x += speed_modifier
-    elif keys[pygame.K_UP]:
+    elif keys[pygame.K_w]:
         current_frame = office_slave_backwards[frame]
         worker_position_y -= speed_modifier
-    elif keys[pygame.K_DOWN]:
+    elif keys[pygame.K_s]:
         current_frame = office_slave_forward[frame]
         worker_position_y += speed_modifier
     elif event.type == pygame.KEYUP:
